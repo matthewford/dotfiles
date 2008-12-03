@@ -1,0 +1,8 @@
+[user]
+	name = Oliver Legg
+	email = oliver.legg@mac.com
+[mirror]
+	summary = true
+[color]
+	status = auto
+	branch = auto
