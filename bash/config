@@ -1,0 +1,12 @@
+# Terminal :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+export EDITOR="mate -w"
+export CLICOLOR=1
+PS1='\h:\w \u$(__git_ps1 ": (%s)")\$ '
+
+# Terminal History :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+shopt -s histappend
+
+# rSpec ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+export SPEC_OPTS="--colour --format specdoc"
