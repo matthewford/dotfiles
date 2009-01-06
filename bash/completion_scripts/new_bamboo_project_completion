@@ -1,0 +1,28 @@
+#!/usr/bin/env ruby
+ 
+class ProjectCompletion
+  PROJECT_PATH = "/Volumes/New Bamboo/Projects/"
+  
+  def initialize(command)
+    @command = command
+  end
+  
+  def matches
+    return ["ERROR", "Volume not mounted"] unless File.directory?(PROJECT_PATH)
+    
+    projects.select do |task|
+      task[0, typed.length] == typed
+    end
+  end
+  
+  def typed
+    @command[/\s(.+?)$/, 1] || ''
+  end
+  
+  def projects
+    `ls "#{PROJECT_PATH}"`.split
+  end
+end
+ 
+puts ProjectCompletion.new(ENV["COMP_LINE"]).matches
+exit 0

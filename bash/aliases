@@ -33,5 +33,15 @@ alias etp='mate ./vendor/plugins/'
 alias ss='./script/server'
 alias sc='./script/console'
 
+# Projects :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+function nb {
+	directory="/Volumes/New Bamboo/Projects/$1";
+	if [ -d "$directory" ]; then
+		cd "$directory";
+	else
+		echo "ERROR: Volume not mounted"
+	fi;
+}
+
 # Profile Editing ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 alias reload='source ~/.bash_profile'

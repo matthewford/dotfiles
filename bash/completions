@@ -1,1 +1,2 @@
 source ~/.bash/completion_scripts/git_completion
+complete -C ~/.bash/completion_scripts/new_bamboo_project_completion -o default nb
