@@ -1,10 +1,13 @@
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 export PATH=$PATH:/usr/local/git/bin
 export PATH=$PATH:/usr/local/gnupg/bin
 export PATH=$PATH:/usr/local/growlnotify/bin
 export PATH=$PATH:/usr/local/mysql/bin
+export PATH=$PATH:/usr/local/sphinx/bin
 export PATH=$PATH:/usr/local/tcpflow/bin
 export PATH=$PATH:/usr/local/wget/bin
 
+export MANPATH=/opt/local/share/man:$MANPATH
 export MANPATH=$MANPATH:/usr/local/git/share/man
 export MANPATH=$MANPATH:/usr/local/gnupg/share/man
 export MANPATH=$MANPATH:/usr/local/growlnotify/man
