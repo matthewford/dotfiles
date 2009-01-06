@@ -1,7 +1,13 @@
 export PATH=$PATH:/usr/local/git/bin
+export PATH=$PATH:/usr/local/gnupg/bin
 export PATH=$PATH:/usr/local/growlnotify/bin
 export PATH=$PATH:/usr/local/mysql/bin
+export PATH=$PATH:/usr/local/tcpflow/bin
+export PATH=$PATH:/usr/local/wget/bin
 
 export MANPATH=$MANPATH:/usr/local/git/share/man
+export MANPATH=$MANPATH:/usr/local/gnupg/share/man
 export MANPATH=$MANPATH:/usr/local/growlnotify/man
 export MANPATH=$MANPATH:/usr/local/mysql/man
+export MANPATH=$MANPATH:/usr/local/tcpflow/man
+export MANPATH=$MANPATH:/usr/local/wget/share/man
