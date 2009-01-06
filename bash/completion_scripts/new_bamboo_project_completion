@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
  
 class ProjectCompletion
-  PROJECT_PATH = "/Volumes/New Bamboo/Projects/"
+  PROJECT_PATH = "/Volumes/NewBamboo/Projects/"
   
   def initialize(command)
     @command = command

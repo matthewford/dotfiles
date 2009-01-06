@@ -38,7 +38,7 @@ alias ijs='java org.mozilla.javascript.tools.shell.Main'
 
 # Projects :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 function nb {
-	directory="/Volumes/New Bamboo/Projects/$1";
+	directory="/Volumes/NewBamboo/Projects/$1";
 	if [ -d "$directory" ]; then
 		cd "$directory";
 	else
