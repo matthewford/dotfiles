@@ -1,7 +1,33 @@
+function parse_git_branch {
+  [ -d .git ] || return 1
+  git_status="$(git status 2> /dev/null)"
+  branch_pattern="^# On branch ([^${IFS}]*)"
+  remote_pattern="# Your branch is (.*)"
+  diverge_pattern="# Your branch and (.*) have diverged"
+  if [[ ! ${git_status}} =~ "working directory clean" ]]; then
+    state=" *"
+  fi
+  # add an else if or two here if you want to get more specific
+  if [[ ${git_status} =~ ${remote_pattern} ]]; then
+    if [[ ${BASH_REMATCH[1]} == "ahead" ]]; then
+      remote=" ↑"
+    else
+      remote=" ↓"
+    fi
+  fi
+  if [[ ${git_status} =~ ${diverge_pattern} ]]; then
+    remote=" ↕"
+  fi
+  if [[ ${git_status} =~ ${branch_pattern} ]]; then
+    branch=${BASH_REMATCH[1]}
+    echo ": [${branch}${state}${remote}]"
+  fi
+}
+
 # Terminal :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 export EDITOR="mate -w"
 export CLICOLOR=1
-PS1='\h:\w \u$(__git_ps1 ": (%s)")\$ '
+PS1='\h:\w \u$(parse_git_branch)\$ '
 
 # Terminal History :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 export HISTCONTROL=erasedups
