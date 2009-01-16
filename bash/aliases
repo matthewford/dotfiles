@@ -32,6 +32,7 @@ alias etp='mate ./vendor/plugins/'
 # Rails ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 alias ss='./script/server'
 alias sc='./script/console'
+alias sa='./script/autospec'
 
 # Javascript :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 alias ijs='java org.mozilla.javascript.tools.shell.Main'
