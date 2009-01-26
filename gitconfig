@@ -6,3 +6,5 @@
 [color]
 	status = auto
 	branch = auto
+[core]
+	excludesfile = /Users/Olly/.gitignore
