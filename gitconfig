@@ -8,3 +8,5 @@
 	branch = auto
 [core]
 	excludesfile = /Users/Olly/.gitignore
+[merge]
+	tool = opendiff
