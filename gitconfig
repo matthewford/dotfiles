@@ -10,3 +10,5 @@
 	excludesfile = /Users/Olly/.gitignore
 [merge]
 	tool = opendiff
+[alias]
+	co = checkout
