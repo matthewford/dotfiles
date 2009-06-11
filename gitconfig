@@ -1,13 +1,11 @@
 [user]
-	name = Oliver Legg
-	email = oliver.legg@mac.com
+	name = Matthew Ford
+	email = matt@botzesty.com
 [mirror]
 	summary = true
 [color]
 	status = auto
 	branch = auto
-[core]
-	excludesfile = /Users/Olly/.gitignore
 [merge]
 	tool = opendiff
 [alias]
