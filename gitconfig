@@ -1,6 +1,6 @@
 [user]
 	name = Matthew Ford
-	email = matt@botzesty.com
+	email = matt@bitzesty.com
 [mirror]
 	summary = true
 [color]
@@ -10,3 +10,8 @@
 	tool = opendiff
 [alias]
 	co = checkout
+[github]
+	user = matthewford
+	email = matt@bitzesty.com
+	token = c214d1e82baef4dbee9bc61d0289f759
+
